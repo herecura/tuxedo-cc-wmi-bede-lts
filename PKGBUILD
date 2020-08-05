@@ -4,9 +4,9 @@
 _pkgname=tuxedo-cc-wmi
 pkgname=$_pkgname-bede-lts
 pkgver=0.1.4
-_current_linux_version=5.4.55
+_current_linux_version=5.4.56
 _next_linux_version=5.5
-pkgrel=4
+pkgrel=5
 pkgdesc="WMI method control for TUXEDO laptops for linux-bede-lts"
 arch=('x86_64')
 url="https://github.com/tuxedocomputers/tuxedo-cc-wmi"
@@ -33,6 +33,7 @@ package() {
     cp -a "/var/lib/dkms/$_pkgname/kernel-$kernver-x86_64/module"/* \
         "${pkgdir}${extradir}/$_pkgname/"
 }
+
 
 
 
